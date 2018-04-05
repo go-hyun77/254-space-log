@@ -5,7 +5,7 @@
 from sys import argv
 import fuel
 import planet
-
+import terraformable
 # Opens the log file and grabs the contents.
 try:
 	fh = open(argv[1], 'r')
@@ -20,7 +20,7 @@ except:
 argSwitcher = {
 #	'-s': NAMES OF SYSTEMS VISITED
 	'-p': planet.get_planet_list,
-#	'-t': TOTAL NUMBER OF TERRAFORMABLE PLANETS SCANNED
+	'-t': terraformable.num_terraformable,
 #	'-d': TOTAL DISTANCE IN LIGHT YEARS
 	'-f': fuel.get_total_fuel,	# The example.
 }
