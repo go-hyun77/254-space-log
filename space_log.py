@@ -31,9 +31,4 @@ try:
 except IndexError:
 	exit("Missing search argument.")
 
-output = func(content)
-if type(output) is list:
-	for l in output:
-		print(l)
-else:
-	print(output)
+print(output)
