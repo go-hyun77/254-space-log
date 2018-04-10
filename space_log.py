@@ -7,6 +7,7 @@ import fuel
 import planet
 import terraformable
 import starsystems
+import lightyears
 # Opens the log file and grabs the contents.
 try:
 	fh = open(argv[1], 'r')
@@ -22,7 +23,7 @@ argSwitcher = {
 	'-s': starsystems.get_star_system_names,
 	'-p': planet.get_planet_list,
 	'-t': terraformable.num_terraformable,
-#	'-d': TOTAL DISTANCE IN LIGHT YEARS
+	'-d': lightyears.get_lightyears,
 	'-f': fuel.get_total_fuel,	# The example.
 }
 
